@@ -1,0 +1,9 @@
+2.3 beta 1 : fev/2001 - Lanáamento inicial para OS/2
+2.3 beta 2 : mar/2001 - Modificaá‰es na ediá∆o de compromissos e endereáos. Agora Ç poss°vel
+             navegar pelas linhas/campos das telas de ediá∆o. TAB, SHIFT TAB s∆o usadas para
+             mudar de linha e ENTER finaliza a ediá∆o do dia. Na ediá∆o de compromissos
+             tambÇm se podem usar as setas para mudar de linha.
+2.3 beta 3 : jun/2001 - Modificada procedure ENTRADATA. A ediá∆o dos campos de data agora s∆o
+             feitas pelas teclas do cursor, de forma mais natural.
+             Corrigido o bug que impedia que compromissos em datas posteriores a 10/05 n∆o
+             fossem encontrados.

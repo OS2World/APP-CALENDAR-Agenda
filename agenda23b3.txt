@@ -1,0 +1,26 @@
+                          Upload Information for Hobbes.nmsu.edu
+                          ===============================================
+
+        Archive Filename: agenda23b3.zip
+       Short Description: Apointments and telefones of your friends (portuguese)
+        Long Description: Uma agenda em modo texto para marcar seus compromissos e ser avisado
+                          sobre eles automaticamente, al‚m de permitir anotar os telefones e
+                          endere‡os dos amigos. Essa ‚ a versÆo 2.3 beta 3.
+      Proposed directory  
+           for placement: /pub/os2/apps/calendar
+               Your name: Geraldo M. Fontes Jr. 
+           Email address: gfontes@tropical.com.br
+    Program contact name: (same)
+   Program contact email: (same)
+             Program URL:  
+
+      Would you like the
+   contact email address
+    included in listings? yes
+
+Operating System/Version: OS/2 3.0 or later
+ Additional requirements: 
+
+                Replaces: ag23beta.zip
+
+

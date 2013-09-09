@@ -1,0 +1,141 @@
+		========================================
+			Agenda - vers∆o 2.3 beta 3	
+		              OS/2 - Warp
+		      autor: Geraldo M. Fontes Jr
+	            contato: gfontes@tropical.com.br
+		========================================
+
+Introduá∆o:
+-----------
+
+	Se vocà chegou atÇ aqui Ç porque pelo menos se interessou em experimentar
+meu progrma. Obrigado!
+	AGENDA Ç, como se pode deduzir pelo nome, uma pequena agenda de compromissos
+e telefones. Roda em modo texto, tanto em tela cheia como em janela. Tem a
+interessante caracter°stica de mostrar um compromisso marcado para o dia
+assim que se liga ou se re-inicia o computador, bastando para isso um £nico
+parÉmetro de linha de comando no startup.cmd ou na janela "Inicializaá∆o". Veremos mais
+adiante como colocar isso para funcionar.
+	Esse programa foi originariamente escrito para o DOS, usando o Turbo Pascal.
+Posteriormente foi portado para o OS/2, tendo sido utilizado o Free Pascal para
+compil†-lo. Com poucas modificaá‰es no c¢digo fonte, tambÇm Ç poss°vel rodar a
+AGENDA em outros sistemas operacionais, desde que uma vers∆o do Free Pascal esteja
+dispon°vel para o mesmo.
+
+
+Instalaá∆o:
+-----------
+
+	Uma vez que a AGENDA est† ainda em fase beta, n∆o h† nenhum programa para
+efetuar a instalaá∆o da mesma. Mas com pouqu°ssimo trabalho, poderemos fazer a insta-
+laá∆o manual do programa. Vejamos:
+1) Em um diret¢rio qualquer, suponhamos C:\RASCUNHO, descompacte o arquivo AGENDA.ZIP:
+   UNZIP AGENDA.ZIP
+
+2) Crie um diret¢rio para os arquivos da AGENDA. Suponhamos "C:\AG":
+   MD C:\AG
+
+3) Copie os arquivos "agenda.exe" e "agenda.ico" para esse diret¢rio:
+   COPY C:\RASCUNHO\AGENDA.EXE C:\AG
+   COPU C:\RASUNHO\AGENDA.ICO C:\AG"
+
+4) Crie um objeto-programa para o arquivo AGENDA.EXE na pasta "Inicializaá∆o" (em inglàs
+   deve ser "Startup" ou algo assim. Meu Warp Ç em portuguàs e eu nunca vi a vers∆o em
+   inglàs, por isso estou supondo que o nome da pasta seja esse).
+
+5) Na linha "ParÉmentros" do bloco de notas "Definiá‰es" desse objeto-programa, coloque
+   "/v" (sem as aspas e em letra min£scula).
+
+6) Em alguma outra pasta ou diretamente no Ambiente de Trabalho, crie outro objeto-pro-
+   grama para a AGENDA, mas n∆o coloque nenhum parÉmetro na linha "ParÉmetros".
+
+7) Os campos "Diret¢rio de trabalho" de ambos os objetos-programas devem apontar para o
+   diret¢rio da AGENDA. Em nosso exemplo, C:\AG.
+
+	Pronto! Est† conlu°da a instalaá∆o da AGENDA. Para utiliz†-la, abra o
+objeto-programa criado no passo 6 acima. A° Ç s¢ marcar seus compromissos e anotar os
+telefones dos amigos.
+	Quando o sistema for iniciado, o objeto-programa que est† em "Inicializaá∆o"
+(passo 4), entrar† em aá∆o, verificando se h† algum compromisso para a data atual.
+Somente se houver algum, Ç que a AGENDA ser† aberta mostrando o compromisso.
+
+
+Utilizaá∆o:
+----------
+
+	Nessa fase n∆o tenho ainda condiá‰es de disponibilizar um manual completo da
+AGENDA. Por essa raz∆o, vou dar somente algumas dicas para tirar mais proveito da mesma.
+	Na tela de Inclus∆o de Compromissos, basta somente teclar ENTER para abrir a
+data atual. Os compromissos podem ser digitados linha-a-linha, teclando TAB ou SHIT+TAB
+ao final de cada uma. TambÇm Ç poss°vel navegar entre as linhas ustilizando-se as setas.
+Para eliminar uma linha inteira, teclar ESC. ENTER finaliza a ediá∆o de um dia.
+	Na tela de alteraá∆o de Telefones e Endereáos, vale o que foi descrito acima,
+ou seja, TAB e SHIFT+TAB mudar de campo, ENTER para finalizar a ediá∆o e ESC para eliminar
+o conte£do de um campo. A eliminaá∆o do campo NOME, elimina todo o registro, mas ser†
+emitido um prompt de confirmaá∆o.
+	A Pesquisa de Telefones e Endereáos poder† ser feita pelo nome ou pelo telefone,
+bastando digitar qualquer desses campos para efetuar a pesquisa. O primeiro nome ou tele-
+fone que atender ao critÇrio digitado, ser† mostrado.
+	Use a consulta geral para ver todos os nomes e telefones arquivados pelo programa.
+
+
+Compilando a AGENDA:
+--------------------
+
+	Junto com o programa, vocà est† recebendo tambÇm o c¢digo-fonte completo do mesmo.
+Para compilar, ser† necess†rio ter instalado em seu sistema o Free Pascal, vers∆o 1.0.4 ou
+superior. O comando para compilar Ç o seguinte:
+
+   PPC386 AGENDA
+
+	N∆o h† nenhum MAKEFILE, j† que uma £nica linha basta para fazer todo o serviáo pesado.
+Se fizer qualquer modificaá∆o no c¢digo-fonte, peáo que me envie uma c¢pia, mostrando o que
+foi mudado, para que eu tambÇm possa tirar proveito da sua criatividade. Acrescentarei ao
+c¢digo oficial as mudanáas que forem julgadas importantes e disponibilizarei a nova vers∆o
+ao p£blico.
+
+
+Outros Idiomas e Sistemas Operacionais:
+---------------------------------------
+
+	Por enquanto, o £nico sistema em que a AGENDA foi testado Ç o OS/2 e o £nico idioma
+em que est† dispon°vel Ç o portuguàs. N∆o tenho condiá‰es de trabalhar em mais idiomas e
+sistemas, embora ache que seja interessante disponibilizar o programa particularmente em
+inglàs e para outros sistemas (Linux, Amiga etc). AlguÇm se habilita? Volunt†rios s∆o bem
+vindos.
+
+
+Licenáa de C¢pia e Utilizaá∆o:
+------------------------------
+
+	Agenda pode ser livremente copiada e distribu°da, desde que n∆o sejam alteradas as
+mensagens de propriedade contidas no c¢digo original, bem como, que nenhum arquivo seja retirado
+do arquivo ZIP original. N∆o h† nenhuma restriá∆o ou licenáa em particular a ser adotada, mas
+creio que a filosofia da GNU-GPL seja aplic†vel aqui. Use e abuse, mas disponibilize o c¢digo
+alterado para o p£blico. Em especial, n∆o se esqueáa de me enviar uma c¢pia.
+
+
+Garantia
+--------
+
+	O programa Ç fornecido como est†. N∆o h† nenhuma garantia expl°cita ou impl°cita com
+relaá∆o ao mesmo. Use-o por sua conta e risco.
+	Sob nenhuma hip¢tese eu deverei ser responsabilizado por qualquer dano causado pela
+utilizaá∆o do software.
+
+
+Cr°ticas e Sugest‰es:
+---------------------
+
+	Se vocà testou o programa, deve ter alguma cr°tica a fazer, um coment†rio qualquer,
+uma sugest∆o, ou, atÇ mesmo, um elogio. Sinta-se Ö vontade para entrar em contato comigo.
+	N∆o vou prometer que colocarei em pr†tica todas as sugest‰es, j† que isso iria
+demandar um tempo maior do que eu tenho. Isso sem falar que n∆o sou programador profissional
+e portanto, n∆o tenho aquela experiància que seria desej†vel. Mas vou, pelo menos, tentar
+colocar em pr†tica. Quanto Ös cr°ticas, aceitarei todas com humildade, porque sei que s¢
+ir∆o nos beneficiar a todos.
+
+				Um grande abraáo a todos que se dispuseram a testar a AGENDA
+
+                                                          Geraldo M. Fontes Jr
+                                                        Vila Velha - ES - Brasil
